@@ -67,7 +67,7 @@
 
             var fill = d3.scale.category20();
             var layout = d3.layout.cloud()
-                .size([450, 600])
+                .size([600, 450])
                 .words(wordCloud)
                 .padding(4)
                 .rotate(function() { return 0; })
@@ -81,7 +81,7 @@
             function draw(words) {
                 
                 svg = container.append("svg")
-                .attr("viewBox", "0 0 450 600")
+                .attr("viewBox", "0 0 600 450")
                 .attr("preserveAspectRatio", "xMidYMid meet")
                 .classed("svg-content", true)
                 .selectAll("text")
